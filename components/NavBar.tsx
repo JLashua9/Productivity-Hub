@@ -1,7 +1,7 @@
-import { Link, useLocation } from 'react-router-dom'
-
+import { Link, useLocation } from 'react-router-dom';
+import './NavBar.css';
 export function NavBar() {
-    const location = useLocation()
+    const location = useLocation();
 
     return (
         <nav className="nav-bar">
@@ -30,12 +30,12 @@ export function NavBar() {
                     Dashboard
                 </Link>
                 <Link
-                    to="/Calender"
-                    className={`nav-link ${location.pathname === '/calender' ? 'active' : ''}`}
-                    >
-                    Calender
+                    to="/calendar"
+                    className={`nav-link ${location.pathname === '/calendar' ? 'active' : ''}`}
+                >
+                    Calendar
                 </Link>
             </div>
         </nav>
-    )
+    );
 }

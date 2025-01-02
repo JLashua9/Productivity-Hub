@@ -7,20 +7,20 @@ export function Home() {
     const menuCards = [
         {
             title: 'Task Manager',
-            description: 'Manage your tasks and to-dos',
-            icon: '📝',
+            //description: 'Manage your tasks and to-dos',
+            //icon: '📝',
             path: '/tasks'
         },
         {
             title: 'Dashboard',
-            description: 'View your productivity stats',
-            icon: '📊',
+            //description: 'View your productivity stats',
+            //icon: '📊',
             path: '/dashboard'
         },
         {
             title: 'Calendar',
-            description: 'View your calendar',
-            icon: 'Calendar',
+            //description: 'View your calendar',
+            //icon: 'Calendar',
             path: '/calendar'
 
         }
@@ -36,9 +36,9 @@ export function Home() {
                         className="menu-card"
                         onClick={() => navigate(card.path)}
                     >
-                        <div className="card-icon">{card.icon}</div>
+
                         <h2 className="card-title">{card.title}</h2>
-                        <p className="card-description">{card.description}</p>
+
                     </div>
                 ))}
             </div>
