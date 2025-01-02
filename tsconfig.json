@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // For React 17+ and React 18
+    "module": "ESNext", // Modern JavaScript modules
+    "target": "ESNext", // Latest JavaScript features
+    "moduleResolution": "node", // Resolves Node.js-style imports
+    "strict": true, // Enables all strict type-checking options
+    "esModuleInterop": true, // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "types": ["react", "react-dom"], // Explicitly includes React and DOM types
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "forceConsistentCasingInFileNames": true // Ensures consistent casing in file imports
+  },
+  "include": ["src"], // Includes source files for compilation
+  "exclude": ["node_modules", "dist"] // Excludes build and dependency files
+}
